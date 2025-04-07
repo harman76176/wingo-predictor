@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wingo Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f0f2f5;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            margin: auto;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .prediction {
+            font-size: 24px;
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Wingo 1-Min Live Prediction</h1>
+        <p><strong>Last 3 Results:</strong> {{ last }}</p>
+        <p class="prediction"><strong>Predicted Safe Number:</strong> {{ prediction }}</p>
+    </div>
+</body>
+</html>
